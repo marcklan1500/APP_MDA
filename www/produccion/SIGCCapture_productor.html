@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIGCCAPTURE</title>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jqm-demos.css">
+    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">-->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="js/SIGCCapture_sesion.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script ></script>
+
+</head>
+<body id="ui-page-top" class="ui-mobile-viewport ui-overlay-a">
+    <!-- ********************************************** -->
+    <!-- ********************************************** -->
+    <!-- **************** PRODUCTOR ******************* -->
+<div data-role="page" class="jqm-demos jqm-panel-page ui-page ui-page-theme-a ui-page-footer-fixed" id="ciudadano" data-quicklinks="true" data-title="SIGCCAPTURE" data-url="/movile/demos/panel/" tabindex="2" >
+    <div data-role="header" data-position="fixed">
+        <h2 class="ui-title"><a href="#"><img src="../css/images/Footer.png"></a></h2>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+    </div><!-- /header -->
+    <div class="ui-content jqm-content" role="main">
+                <label for="text-basic">Cedula:</label>
+                    <input name="text-basic" id="text-basic" value="" type="text">
+
+                <label for="text-basic">Nombres:</label>
+                    <input name="text-basic" id="text-basic" value="" type="text">
+
+                <label for="text-basic">Apellidos:</label>
+                    <input name="text-basic" id="text-basic" value="" type="text">
+
+                <label for="text-basic">Genero:</label>
+                    <select name="listb_genero" id="listb_genero" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Etnia:</label>
+                    <select name="listb_etnia" id="listb_etnia" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Fecha de Nacimiento:</label>
+                <input type="text" data-role="date">
+
+
+                <label for="text-basic">Nivel Educativo:</label>
+                    <select name="listb_nivel_educativo" id="listb_nivel_educativo" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Actividad Económica:</label>
+                    <select name="listb_actividad_economica" id="listb_actividad_economica" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Tiene Capacidad Especial?:</label>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <input type="radio" name="radio-choice-h-3" id="radio-choice-h-3a" value="on" checked="checked">
+                        <label for="radio-choice-h-3a">SI</label>
+                        <input type="radio" name="radio-choice-h-3" id="radio-choice-h-3b" value="off">
+                        <label for="radio-choice-h-3b">NO</label>
+                    </fieldset>
+
+                <label for="text-basic">Dirección:</label>
+                    <input name="text-basic" id="text-basic" value="" type="text">
+
+                <label for="text-basic">Teléfono:</label>
+                    <input name="text-basic" id="text-basic" value="" type="text">
+
+                <label for="text-basic">Estado Civil:</label>
+                    <select name="listb_estado_civil" id="listb_estado_civil" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Provincia:</label>
+                    <select name="listb_provincia" id="listb_provincia" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Cantón:</label>
+                    <select name="listb_canton" id="listb_canton" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Parroquia:</label>
+                    <select name="listb_parroquia" id="listb_parroquia" data-mini="true">
+                    </select>
+
+                <label for="text-basic">Sector:</label>
+                    <select name="select-native-17" id="slc_etnia" data-mini="true">
+                        <option selected="selected">Por Favor Seleccione</option>
+                        <option value="1">The 1st Option</option>
+                        <option value="2">The 2nd Option</option>                        
+                        <option value="4">The 4th Option</option>
+                    </select>
+
+                <label for="text-basic">¿Pertenece a una Comuna?</label>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+                        <label for="radio-choice-h-2a">SI</label>
+                        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+                        <label for="radio-choice-h-2b">NO</label>
+                    </fieldset>
+
+                <label for="text-basic">Barrio</label>
+                    <select name="select-native-17" id="slc_etnia" data-mini="true">
+                        <option selected="selected">Por Favor Seleccione</option>
+                        <option value="1">The 1st Option</option>
+                        <option value="2">The 2nd Option</option>                        
+                        <option value="4">The 4th Option</option>
+                    </select>
+
+                <label for="text-basic">¿Es Producto Agricola?</label>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <input name="radio-choice-1" id="radio-choice-1" value="si" checked="checked" type="radio">
+                        <label for="radio-choice-1">SI</label>
+                        <input name="radio-choice-1" id="radio-choice-2" value="false" type="radio">
+                        <label for="radio-choice-2">NO</label>
+                    </fieldset>
+
+                <label for="text-basic">Fecha de Registro</label>
+                    <p id="txt_fecha_actual"></p>
+            </div><!-- /content -->
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer ui-footer ui-bar-inherit ui-footer-fixed slideup" role="contentinfo">
+                <p>Powered by GEOTACTICS</p>
+    </div><!-- /footer -->       
+<!--PANEL LATERAL--> 
+    <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
+        <ul class="jqm-list ui-alt-icon ui-nodisc-icon ui-listview">
+            <li data-icon="delete" align="right"><a href="../menu.html" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-action" >Cerrar menu</a></li>
+            <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                <a href="../perfil.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-user">Perfil</a>
+            </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                <h3>Demografia</h3>
+            <ul data-role="listview">
+                <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                    <a href="../demografia/SIGCCapture_ciudadanos.html" class="ui-btn ui-btn-icon-right ui-icon-user">Ciudadano</a>
+                </li>
+                <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                    <a href="../demografia/SIGCCapture_familia.html" class="ui-btn ui-btn-icon-right ui-icon-info">Familia</a>
+                </li>
+                <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                    <a href="../demografia/SIGCCapture_vivienda.html" class="ui-btn ui-btn-icon-right ui-icon-home">Vivienda</a>
+                </li>
+            </ul>
+            </li>
+            <li data-role="collapsible"  data-inset="false" data-iconpos="right">
+                <h3>Producción</h3>
+                <ul data-role="listview">
+                    <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                        <a href="SIGCCapture_productor.html" class="ui-btn ui-btn-icon-right ui-icon-gear">Productor</a>
+                    </li>
+                    <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                        <a href="SIGCCapture_uproductiva.html" class="ui-btn ui-btn-icon-right ui-icon-location">Unidad productiva</a>
+                    </li>
+                    <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                        <a href="SIGCCapture_produccion.html" class="ui-btn ui-btn-icon-right ui-icon-shop">Produccion</a>
+                    </li>
+                    <li><a href="SIGCCapture_riego.html" class="ui-btn ui-btn-icon-right  ui-icon-clock">Riego</a></li>
+                </ul>
+            </li>
+            <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                <a onclick="SalirSesionMod()" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-power">Cerrar Sesión</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

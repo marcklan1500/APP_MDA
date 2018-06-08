@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIGCCAPTURE</title>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jqm-demos.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.datepicker.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="js/SIGCCapture_sesion.js"></script>
+    <script src="../js/SIGCCapture_familia.js"></script>
+    <script src="../js/jquery.ui.datepicker.js"></script>
+    <script id="mobile-datepicker" src="../js/jquery.mobile.datepicker.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script type="text/javascript" src="../cordova.js"></script>
+</head>
+<body id="ui-page-top" class="ui-mobile-viewport ui-overlay-a">
+    <!-- ********************************************** -->
+    <!-- ********************************************** -->
+    <!-- **************** FAMILIA  ******************** -->
+<div data-role="page" class="jqm-demos jqm-panel-page ui-page ui-page-theme-a ui-page-footer-fixed" id="familia" data-quicklinks="true" data-title="SIGCCAPTURE" data-url="/movile/demos/panel/" tabindex="3" >
+    <div data-role="header" data-position="fixed">
+        <h2 class="ui-title"><a href="#"><img src="../css/images/Footer.png"></a></h2>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+    </div><!-- /header -->
+    <div class="ui-content jqm-content" role="main">
+
+            
+
+                <label for="txt_cabeza_familia">Cabeza de Familia:</label>
+                    <input name="txt_cabeza_familia" data-type="search" id="txt_cabeza_familia" onkeyup="activar('ul_cabeza_familia')">
+                    <input name="txt_ci_cabeza_familia" id="txt_ci_cabeza_familia" value="" type="text">
+                    <br>
+
+                <ul id="ul_cabeza_familia" data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#txt_cabeza_familia">
+                </ul>
+
+
+                <label for="txt_miembro_familia">Miembro de Familia:</label>
+                    <input name="txt_miembro_familia" data-type="search" id="txt_miembro_familia" onkeyup="activar('ul_miembro_familia')">
+                    <input name="txt_ci_miembro_familia" id="txt_ci_miembro_familia" value="" type="text">
+                    <br>
+
+                <ul id="ul_miembro_familia" data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#txt_miembro_familia">
+                </ul>
+
+                <label for="slc_familiar">Relación Familiar:</label>
+                    <select name="slc_familiar" id="slc_familiar" data-mini="true">
+                        <option value='-1'>PORFAVOR SELECCIONE</option>
+                    </select>
+
+                <label for="txt_fecha_actual_familia">Fecha de Registro</label>
+                    <p id="txt_fecha_actual_familia"></p>
+
+                <button class="ui-btn ui-btn-b" onclick="guardarFamilia()">GUARDAR</button>
+                <button class="ui-btn ui-btn-b" onclick="mostrarFamilia()">MOSTRAR</button>
+                <a href="index.html" data-ajax="false"><button class="ui-btn ui-btn-b">REGRESAR</button></a>
+
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle">
+                     <thead>
+                       <tr>
+                         <th>Cabeza</th>
+                         <th data-priority="2">Miembro</th>
+                         <th data-priority="3">Relacion</th>
+                       </tr>
+                     </thead>
+                     <tbody id="tableFamilia">
+                         
+                     </tbody>
+                </table>
+            </div><!-- /content -->
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer ui-footer ui-bar-inherit ui-footer-fixed slideup" role="contentinfo">
+                <p>Powered by GEOTACTICS</p>
+    </div><!-- /footer -->       
+<!--PANEL LATERAL--> 
+    <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
+        <ul class="jqm-list ui-alt-icon ui-nodisc-icon ui-listview">
+            <li data-icon="delete" align="right"><a href="../menu.html" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-action" >Cerrar menu</a></li>
+            <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                <a href="../perfil.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-user">Perfil</a>
+            </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                <h3>Demografia</h3>
+            <ul data-role="listview">
+                <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                    <a href="SIGCCapture_ciudadanos.html" class="ui-btn ui-btn-icon-right ui-icon-user">Ciudadano</a>
+                </li>
+                <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                    <a href="SIGCCapture_familia.html" class="ui-btn ui-btn-icon-right ui-icon-info">Familia</a>
+                </li>
+                <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                    <a href="SIGCCapture_vivienda.html" class="ui-btn ui-btn-icon-right ui-icon-home">Vivienda</a>
+                </li>
+            </ul>
+            </li>
+            <li data-role="collapsible"  data-inset="false" data-iconpos="right">
+                <h3>Producción</h3>
+                <ul data-role="listview">
+                    <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                        <a href="../produccion/SIGCCapture_productor.html" class="ui-btn ui-btn-icon-right ui-icon-gear">Productor</a>
+                    </li>
+                    <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                        <a href="../produccion/SIGCCapture_uproductiva.html" class="ui-btn ui-btn-icon-right ui-icon-location">Unidad productiva</a>
+                    </li>
+                    <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                        <a href="../produccion/SIGCCapture_produccion.html" class="ui-btn ui-btn-icon-right ui-icon-shop">Produccion</a>
+                    </li>
+                    <li><a href="../produccion/SIGCCapture_riego.html" class="ui-btn ui-btn-icon-right  ui-icon-clock">Riego</a></li>
+                </ul>
+            </li>
+            <li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+                <a onclick="SalirSesionMod()" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-power">Cerrar Sesión</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

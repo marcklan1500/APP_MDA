@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Halo - Mobile Template</title>
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- Fonts -->
+    <link href="./css/css.css" rel='stylesheet' type='text/css'>
+    <!-- Icons -->
+    <link href="css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+
+      <!-- Sidebars -->
+      <!-- Right Sidebar -->
+      <ul id="slide-out" class="side-nav">
+        <!-- Tabs -->
+        <li>
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" >Manos De Angel</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html" class="no-child"><i class="ion-log-out"></i> Cerrar Sesión</a></li>
+      </ul>
+
+      <!-- Left Sidebar -->
+      <ul id="slide-out-left" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            <div class="nav-social">
+              <i class="ion-social-facebook"></i>
+              <i class="ion-social-twitter"></i>
+              <i class="ion-social-tumblr"></i>
+            </div>
+            <div class="nav-avatar">
+              <img class="circle avatar" src="img/user.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Admin</h3>
+                <p>Marco Joel Landi</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="menu.html" class="no-child"><i class="ion-android-home"></i> Inicio</a></li>
+        <li><a href="perfil.html" class="no-child"><i class="ion-android-person"></i>Perfil</a></li>
+        <li><a href="servicios.html" class="no-child"><i class="ion-android-document"></i> Servicios</a></li>
+        <li><a href="misionvision.html" class="no-child"><i class="ion-android-list"></i> Misión - Visión</a></li>
+        <li><a href="#" class="no-child"><i class="ion-ios-videocam"></i> Ubicación</a></li>
+        <li><a href="contactos.html" class="no-child"><i class="ion-android-map"></i> Contactos</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+
+      <!-- Page Content -->
+      <div id="content" class="page">
+
+        <!-- Toolbar -->
+        <div id="toolbar" class="primary-color">
+          <div class="open-left" id="open-left" data-activates="slide-out-left">
+            <i class="ion-android-menu"></i>
+          </div>
+          <span class="title">Contactos</span>
+          <div class="open-right" id="open-right" data-activates="slide-out">
+            <i class="ion-android-person"></i>
+          </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+          <iframe class="animated fadein" src="https://www.google.com/maps/d/embed?mid=1X5fWacOi7Bmz-SVNVX_xR0WinhigDZbJ&hl=es" width="640" height="480" width="100%" height="350px" style="border:none;"></iframe>
+
+          <!-- Form Inputs --> 
+          <div class="form-inputs">
+
+            <h4 class="center">Complete el formulario!</h4>
+            <div>
+              <div class="input-field animated fadeinright">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Nombres</label>
+              </div>
+              <div class="input-field animated fadeinright delay-1">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Apellidos</label>
+              </div>
+            </div>
+            <div class="input-field animated fadeinright delay-2">
+              <input id="email" type="email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field animated fadeinright delay-3">
+              <input id="telephone" type="text" class="validate">
+              <label for="telephone">Asunto</label>
+            </div>
+            
+            <div class="input-field animated fadeinright delay-5">
+              <textarea class="materialize-textarea" id="textarea1"></textarea> 
+              <label for="textarea1">Escriba su mensaje aquí</label>
+            </div>
+
+        
+            <a class="waves-effect waves-light btn-large primary-color width-100 animated bouncein delay-6" href="index.html">Enviar</a>
+          </div>
+
+          <!-- Footer -->
+          <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">Manos de angel S.A. Siguenos tambien en...</p>
+                <div class="center-align">
+                  <i class="ion-social-facebook m-10 white-text"></i>
+                  <i class="ion-social-twitter m-10 white-text"></i>
+                  <i class="ion-social-pinterest m-10 white-text"></i>
+                  <i class="ion-social-dribbble m-10 white-text"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2018 Manos de Angel S.A. Un aporte más de Uniandes Ibarra
+            <a class="grey-text text-lighten-4 right" href="#!">Politicas de privacidad</a>
+            </div>
+          </div>
+        </footer>
+      
+        </div> <!-- End of Main Contents -->
+      
+       
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+    
+    
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>   
+    <script src="js/jquery.smoothState.min.js"></script> 
+    <script src="js/materialize.min.js"></script> 
+    <script src="js/swiper.min.js"></script>  
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+
+<!-- Mirrored from www.codnauts.com/themes/halo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2018 15:54:47 GMT -->
+</html>
