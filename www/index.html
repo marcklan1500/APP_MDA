@@ -1,57 +1,158 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)http://www.codnauts.com/themes/halo/login.html -->
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>MDA</title>
+<html lang="en-US">
+  
+<!-- Mirrored from www.codnauts.com/themes/halo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2018 15:54:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Enfermeras a Domicilio</title>
     <meta content="IE=edge" http-equiv="x-ua-compatible">
     <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
     <!-- Fonts -->
-    <link href="./css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel='stylesheet' type='text/css'>
     <!-- Icons -->
-    <link href="./css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
     <!-- Styles -->
-    <link href="./css/keyframes.css" rel="stylesheet" type="text/css">
-    <link href="./css/materialize.min.css" rel="stylesheet" type="text/css">
-    <link href="./css/swiper.css" rel="stylesheet" type="text/css">
-    <link href="./css/swipebox.min.css" rel="stylesheet" type="text/css">
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
 
-  <body style="">
-    <div class="m-scene" id="main"><!-- Main Container -->
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+      <!-- Right Sidebar -->
+      <ul id="slide-out" class="side-nav">
+        <!-- Tabs -->
+        <li>
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" >Manos de Angel</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html" class="no-child"><i class="ion-log-out"></i> Cerrar Sesión</a></li>
+      </ul>
+
+      <!-- Left Sidebar -->
+      <ul id="slide-out-left" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            <div class="nav-social">
+              <i class="ion-social-facebook"></i>
+              <i class="ion-social-twitter"></i>
+              <i class="ion-social-tumblr"></i>
+            </div>
+            <div class="nav-avatar">
+              <img class="circle avatar" src="img/user.jpg" alt="">
+              <div class="avatar-body">
+                <h3>Admin</h3>
+                <p>Marco Joel Landi</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="menu.html" class="no-child"><i class="ion-android-home"></i> Inicio</a></li>
+        <li><a href="perfil.html" class="no-child"><i class="ion-android-person"></i>Perfil</a></li>
+        <li><a href="servicios.html" class="no-child"><i class="ion-android-document"></i> Servicios</a></li>
+        <li><a href="solicitud.html" class="no-child"><i class="ion-android-document"></i> Solicitudes</a></li>
+        <li><a href="misionvision.html" class="no-child"><i class="ion-android-list"></i> Mision - Vision</a></li>
+        <li><a href="#" class="no-child"><i class="ion-ios-videocam"></i> Ubicación</a></li>
+        <li><a href="contactos.html" class="no-child"><i class="ion-android-map"></i> Contactos</a></li>
+      </ul>
+      <!-- End of Sidebars -->
+
       <!-- Page Content -->
-      <div id="content" class="grey-blue login">
+      <div id="content">
 
         <!-- Toolbar -->
-        <div id="toolbar" class="tool-login primary-color animated fadeindown">
-          <a href="javascript:history.back()" class="open-left">
-            <i class="ion-android-arrow-back"></i>
-          </a>
+        <div id="toolbar" class="halo-nav box-shad-none">
+          <div class="open-left" id="open-left" data-activates="slide-out-left">
+            <i class="ion-android-menu"></i>
+          </div>
+          <span class="title none">Manos de Angel</span>
+          <div class="open-right" id="open-right" data-activates="slide-out">
+            <i class="ion-android-person"></i>
+          </div>
         </div>
         
+        <div class="h-banner animated fadeindown">
+          <div class="parallax">
+            <!-- Slider -->         
+            <div class="swiper-container slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/8.jpg" alt="">
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- End of Slider -->
+            <div class="banner-title"><b>Manos de Angel</b></div>
+          </div>
+         </div>
+
         <!-- Main Content -->
-        <div class="login-form animated fadeinup delay-2 z-depth-1">
+        <div class="animated fadeinup">
 
-          <h1>Login</h1>
-          <div class="input-field">
-            <i class="ion-android-contact prefix"></i> 
-            <input class="validate" id="login" type="text"> 
-            <label for="login">Nombre de usuario</label>
+          <!-- Heading -->
+          <div class="heading-container">
+            <h2 class="heading">Bienvenido<br>
+            Aso. de enfermeras</h2>
+            <p class="flow-text">Nos complace el mostrar una experiencia móvil que te enorgullezca ser parte de nosotros.</p>
           </div>
 
-          <div class="input-field" style="margin-bottom:20px;">
-            <i class="ion-android-lock prefix"></i> 
-            <input class="validate" id="login-psw" type="password"> 
-            <label for="login-psw">Contraseña</label>
+          <!-- Features -->
+          <div class="features p-20 grey-blue">
+            <div class="center promo">
+              <i class="ion-flash primary-text"></i>
+              <h6 class="promo-caption">Acelera tus pedidos</h6>
+              <p class="light center">Hemos creado un entorno amigable, con el fin de agilizar los procesos que conllevan el realizar un pedido.</p>
+            </div>
+            <div class="center promo">
+              <i class="ion-android-contacts primary-text"></i>
+              <h6 class="promo-caption">Pensada en Usuarios</h6>
+              <p class="light center">Gracias a la aplicación reducimos tiempos de gestión en los diferentes servicios.</p>
+            </div>
+            <div class="center promo">
+              <i class="ion-android-settings primary-text"></i>
+              <h6 class="promo-caption"></h6>
+              <p class="light center">Hemos proporcionado documentación detallada para ayudar a los nuevos usuarios a comenzar. También estamos siempre abiertos a los comentarios y podemos responder cualquier pregunta que un usuario pueda tener.</p>
+            </div>
           </div>
+          <!-- Footer -->
+          <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">Manos de angel S.A. Siguenos tambien en...</p>
+                <div class="center-align">
+                  <i class="ion-social-facebook m-10 white-text"></i>
+                  <i class="ion-social-twitter m-10 white-text"></i>
+                  <i class="ion-social-pinterest m-10 white-text"></i>
+                  <i class="ion-social-dribbble m-10 white-text"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            2018 Manos de Angel S.A. Un aporte más de Uniandes Ibarra
+            <a class="grey-text text-lighten-4 right" href="#!">Politicas de privacidad</a>
+            </div>
+          </div>
+        </footer>
 
-          <a class="waves-effect waves-light btn-large accent-color width-100 m-b-20 animated bouncein delay-4" onclick="inicioSesion()">Acceder</a> 
-          <span>No tienes cuenta? <a class="primary-text" href="registrar.html">Registrar</a></span>
-        </div><!-- End of Main Contents -->
+        </div> <!-- End of Main Contents -->
       
        
-      </div> <!-- End of Page Content --></div> <!-- End of Page Container -->
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
     
     
     <script src="js/jquery-2.1.0.min.js"></script>
@@ -63,8 +164,7 @@
     <script src="js/masonry.min.js"></script>
     <script src="js/chart.min.js"></script>
     <script src="js/functions.js"></script>
-    <script src="js/inicio.js"></script>
-  
-<div class="hiddendiv common"></div>
-</body>
+  </body>
+
+<!-- Mirrored from www.codnauts.com/themes/halo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jan 2018 15:54:47 GMT -->
 </html>
