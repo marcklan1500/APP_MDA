@@ -13,8 +13,9 @@ function onSuccess(position) {
   lang=position.coords.longitude;
 }
 function onError(error) {
-      alert('code: ' + error.code + '\n' +
-      'message: ' + error.message + '\n');
+      //alert('code: ' + error.code + '\n' +
+      //'message: ' + error.message + '\n');
+      app.dialog.alert("POR FAVOR ENCIENDA EL GPS");
     }
 
 function initMap() {
@@ -60,7 +61,7 @@ function inicioSesion() {
 
   var username = document.getElementById("login").value;
   var password = document.getElementById("login-psw").value;
-  archivoValidacion =  "http://192.168.4.8/WS_MDA/e_sismert/mda_select_usuario.php?jsoncallback=?"
+  archivoValidacion =  "http://192.168.137.1/WS_MDA/e_sismert/mda_select_usuario.php?jsoncallback=?"
   
          $.getJSON( archivoValidacion,{ 
           correo:username,
@@ -93,7 +94,7 @@ function verEnMapa(coorx, coory){
         });
 }
 function solicitudes() {
-  archivoValidacion =  "http://192.168.4.8/WS_MDA/e_sismert/mda_select_solicitud.php?jsoncallback=?"
+  archivoValidacion =  "http://192.168.137.1/WS_MDA/e_sismert/mda_select_solicitud.php?jsoncallback=?"
   
          $.getJSON( archivoValidacion,{ 
           id:"1"
