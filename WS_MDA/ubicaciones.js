@@ -1,7 +1,7 @@
 //var flightPlanCoordinates = [];
 
     function datos(){
-        archivoValidacion =  "http://192.168.4.8/sismert/e_sismert/esismert_select_ubicaciones.php?jsoncallback=?"
+        archivoValidacion =  "http://localhost/APP_MDA/WS_MDA/e_sismert/esismert_select_ubicaciones.php?jsoncallback=?"
   
          $.getJSON( archivoValidacion,{ 
           cedula:'1003291034',

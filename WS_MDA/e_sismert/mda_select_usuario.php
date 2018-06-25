@@ -38,13 +38,8 @@ if(  $verifica == 1 ){
 $resultadosJson = json_encode($resultados);
 
 echo $_GET['jsoncallback'] . '(' . $resultadosJson . ');';
-
-
-			header('Content-type: application/json');
-			
+			header('Content-type: application/json');			
 			//Se abre el acceso a las conexiones que requieran de esta aplicacion
 			header("Access-Control-Allow-Origin: *");
-
-
 ?>
 

@@ -6,17 +6,17 @@ var lang = "";
 var ds;
 var dd;
 
-navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
+//navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
 
-function onSuccess(position) {
-  lati=position.coords.latitude;
-  lang=position.coords.longitude;
-}
-function onError(error) {
+//function onSuccess(position) {
+//  lati=position.coords.latitude;
+//  lang=position.coords.longitude;
+//}
+//function onError(error) {
       //alert('code: ' + error.code + '\n' +
       //'message: ' + error.message + '\n');
-      app.dialog.alert("POR FAVOR ENCIENDA EL GPS");
-    }
+//      app.dialog.alert("POR FAVOR ENCIENDA EL GPS");
+//    }
 
 function initMap() {
 
@@ -61,7 +61,7 @@ function inicioSesion() {
 
   var username = document.getElementById("login").value;
   var password = document.getElementById("login-psw").value;
-  archivoValidacion =  "http://192.168.137.1/WS_MDA/e_sismert/mda_select_usuario.php?jsoncallback=?"
+  archivoValidacion =  "http://localhost/APP_MDA/WS_MDA/e_sismert/mda_select_usuario.php?jsoncallback=?"
   
          $.getJSON( archivoValidacion,{ 
           correo:username,
@@ -69,11 +69,12 @@ function inicioSesion() {
         }).done(function(respuestaServer){ 
           console.log(respuestaServer);
             if(respuestaServer.validacion == "ok"){
-              location.href = "menu.html";
+              location.href = "sistema.html";
              //alert('Bienvenido: '+user[0]);
             }
             else{   
               alert('Usuario y/o Contraseña Incorrectos!!');
+              location.href = "login.html";
             }
           }).fail(function() {
             alert('No se puede conectar con el Servidor!!');
